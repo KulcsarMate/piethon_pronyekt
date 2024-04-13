@@ -5,9 +5,9 @@ def válassz(lista):
         if good == False:
             print("Adjon meg egy választ a lehetőségek közül")
         else:
-            return elem
+            return good
 
-def alkalmaz(szám):
+def alkalmaz(szám = int):
     if szám == 0:
         megszámolás()
     elif szám == 1:
