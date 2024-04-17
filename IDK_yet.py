@@ -33,25 +33,57 @@ def alkalmaz(szám):
         rendezés()
 
 def megszámolás():
-    print("asd")
+    db = 0
+    l = []
+    for i in range(len(l)):
+        db += 1
+    return db
 
 def összegzés():
-    print("asd")
+    s = 0
+    l = []
+    for i in range(len(l)):
+        s += l[i]
+    return s
 
 def minimum():
-    print("asd")
+    mini = 0
+    l = []
+    for i in range(len(l)):
+        if l[i] < l[mini]:
+            mini = i
+    return l[mini]
 
 def maximum():
-    print("asd")
+    maxi = 0
+    l = []
+    for i in range(len(l)):
+        if l[i] > l[maxi]:
+            maxi = i
+    return l[maxi]
 
 def keresés():
-    print("asd")
+    x = 0
+    i = 0
+    l = []
+    while i < len(l) and not(l[i] == x):
+        i += 1
+    return i < len(l)
 
 def kiválogatás():
-    print("asd")
+    x, i = 0, 0
+    l, y = [], []
+    for i in range(len(l)):
+        if l[i] == x:
+            y.append(l[i])
+    return y
 
 def rendezés():
-    print("asd")
+    l = []
+    for i in range(len(l)):
+        for j in range(len(l)-1-i):
+            if l[j] > l[j+1]:
+                l[j], l[j+1] = l[j+1], l[j]
 
 def niceprint(lista):
     for i in range(len(lista)-1):
