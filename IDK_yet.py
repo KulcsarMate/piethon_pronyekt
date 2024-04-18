@@ -12,7 +12,15 @@ def válassz(játék, nézők, hossz):
         line = file.readline().strip()
     file.close()
 
-def alkalmaz(szám):
+def alkalmaz(lista):
+    good = False
+    while good == False:
+        niceprint(lista)
+        szám = int(input("Add meg a kívánt információ számát: "))-1
+        if szám < 0 or szám > 6:
+            print("Adjon meg egy jelenlévő elemet!")
+        else:
+            good == True
     if szám == 0:
         megszámolás()
     elif szám == 1:
@@ -89,5 +97,7 @@ def niceprint(lista):
 def main():
     játék, nézők, hossz = [], [], []
     válassz(játék, nézők, hossz)
+    lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Keresés (5)", "Kiválogatás (6)", "Rendezés (7)"]
+    alkalmaz(lista)
 
 main()
