@@ -1,20 +1,16 @@
-def válassz(lista):
-    while True:
-        elem = input("Adja meg a keresni kívánt programozói tétel nevét: ").capitalize()
-        good = search(lista, elem)
-        if good == False:
-            print("Adjon meg egy választ a lehetőségek közül")
-        else:
-            return good
+from random import randint
 
-def search(lista, elem):
-    i = 0
-    while i < len(lista)-1 and not(elem == lista[i]):
-        i += 1
-    if not(i < len(lista)-1):
-        return False
-    else:
-        return i
+def válassz(játék, nézők, hossz):
+    ez = input("Add meg a megnyitni kívánt fájl nevét: ")
+    file = open(f"{ez}", "r", encoding="utf-8")
+    line = file.readline().strip()
+    while line != "":
+        chunk = line.split(";")
+        játék.append(chunk[0])
+        nézők.append(int(chunk[1]))
+        hossz.append(float(chunk[2]))
+        line = file.readline().strip()
+    file.close()
 
 def alkalmaz(szám):
     if szám == 0:
@@ -91,7 +87,7 @@ def niceprint(lista):
     print(lista[len(lista)-1])
 
 def main():
-    lista = ["Megszámolás", "Összegzés", "Minimum", "Maximum", "Keresés", "Kiválogatás", "Rendezés"]
-    alkalmaz(int(válassz(lista)))
+    játék, nézők, hossz = [], [], []
+    válassz(játék, nézők, hossz)
 
 main()
