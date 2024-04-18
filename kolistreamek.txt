@@ -1,0 +1,21 @@
+Lethal Company;285;1.2
+7 Days to Die;97;0.4
+Frankenstein;120;1.6
+The Rats;47;0.2
+Amanda the Adventurer;201;1.7
+Ultimate Custom Night;508;2.5
+Doom;823;5.0
+Omori;423;4.7
+Bendy and the Ink Machine;186;2.6
+Immortality;72;0.8
+Cry of Fear;102;0.5
+Devil May Cry;302;1.9
+Doki Doki Literature Club!;724;3.7
+Friday the 13th;246;2.9
+Elden Ring;175;1.6
+The Last of Us;138;2.0
+Five Nights at Freddy's;893;5.6
+Granny;406;1.2
+Manhunt;76;0.8
+Outlast;457;1.4
+Resident Evil;234;3.2
