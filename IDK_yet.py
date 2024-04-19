@@ -1,3 +1,4 @@
+from os import truncate
 from random import randint
 
 def válassz(játék, nézők, hossz):
@@ -22,7 +23,10 @@ def alkalmaz(lista, játék, nézők, hossz):
         else:
             good = True
     if szám == 0:
-        megszámolás(lista)
+        ora = input("Adja meg ismerni kívánt maximum hosszt (ne írjon semmit, ha az alapértelmezett 1 órát szeretné használni): ")
+        if ora == "":
+            ora = 1
+        print(f"A stream {megszámolás(hossz, float(ora))}-szer crashelt {ora} óra elélrése előtt.")
     elif szám == 1:
         print(f"Streamelt órák száma: {összegzés(hossz)}")
     elif szám == 2:
@@ -30,16 +34,25 @@ def alkalmaz(lista, játék, nézők, hossz):
         index = keresés(hossz, act)
         print(f"A leghamarabb crashelő stream hossza: {act}, játéka: {játék[index]}, nézőszáma: {nézők[index]}")
     elif szám == 3:
-        maximum(lista)
+        print(f"A legnagyobb nézőszám {maximum(nézők)} volt")
     elif szám == 4:
         kiválogatás(lista)
     elif szám == 5:
-        rendezés(lista)
+        rendezés(hossz, nézők, játék)
+        file = open("Rendezett.txt", "a", encoding="utf-8")
+        file.truncate(0)
+        file.seek(0)
+        for i in range(len(hossz)):
+            file.write(f"{játék[i]};{nézők[i]}; {hossz[i]} \n")
+        print("Fájl létrejött 'Rendezett.txt' néven.")
+        file.close()
+        
 
-def megszámolás(list):
+def megszámolás(lista, limit):
     db = 0
-    for i in range(len(list)):
-        db += 1
+    for i in range(len(lista)):
+        if lista[i] < limit:
+            db += 1
     return db
 
 def összegzés(lista):
@@ -76,11 +89,13 @@ def kiválogatás(lista):
             y.append(lista[i])
     return y
 
-def rendezés(lista):
+def rendezés(lista, masik, jatek):
     for i in range(len(lista)):
         for j in range(len(lista)-1-i):
             if lista[j] > lista[j+1]:
                 lista[j], lista[j+1] = lista[j+1], lista[j]
+                jatek[j], jatek[j+1] = jatek[j+1], jatek[j]
+                masik[j], masik[j+1] = masik[j+1], masik[j]
 
 def niceprint(lista):
     for i in range(len(lista)-1):
