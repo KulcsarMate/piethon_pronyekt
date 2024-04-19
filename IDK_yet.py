@@ -2,7 +2,7 @@ from random import randint
 
 def válassz(játék, nézők, hossz):
     ez = input("Add meg a megnyitni kívánt fájl nevét: ")
-    file = open(f"{ez}", "r", encoding="utf-8")
+    file = open(f"{ez}.txt", "r", encoding="utf-8")
     line = file.readline().strip()
     while line != "":
         chunk = line.split(";")
@@ -12,82 +12,75 @@ def válassz(játék, nézők, hossz):
         line = file.readline().strip()
     file.close()
 
-def alkalmaz(lista):
+def alkalmaz(lista, játék, nézők, hossz):
     good = False
-    while good == False:
+    while good != True:
         niceprint(lista)
         szám = int(input("Add meg a kívánt információ számát: "))-1
-        if szám < 0 or szám > 6:
-            print("Adjon meg egy jelenlévő elemet!")
+        if szám < 0 or szám > 5:
+            print("Adjon meg egy jelenlévő elemet! \n")
         else:
-            good == True
+            good = True
     if szám == 0:
-        megszámolás()
+        megszámolás(lista)
     elif szám == 1:
-        összegzés()
+        print(f"Streamelt órák száma: {összegzés(hossz)}")
     elif szám == 2:
-        minimum()
+        act = minimum(hossz)
+        index = keresés(hossz, act)
+        print(f"A leghamarabb crashelő stream hossza: {act}, játéka: {játék[index]}, nézőszáma: {nézők[index]}")
     elif szám == 3:
-        maximum()
+        maximum(lista)
     elif szám == 4:
-        keresés()
+        kiválogatás(lista)
     elif szám == 5:
-        kiválogatás()
-    elif szám == 6:
-        rendezés()
+        rendezés(lista)
 
-def megszámolás():
+def megszámolás(list):
     db = 0
-    l = []
-    for i in range(len(l)):
+    for i in range(len(list)):
         db += 1
     return db
 
-def összegzés():
+def összegzés(lista):
     s = 0
-    l = []
-    for i in range(len(l)):
-        s += l[i]
+    for i in range(len(lista)):
+        s += lista[i]
     return s
 
-def minimum():
+def minimum(lista):
     mini = 0
-    l = []
-    for i in range(len(l)):
-        if l[i] < l[mini]:
+    for i in range(len(lista)):
+        if lista[i] < lista[mini]:
             mini = i
-    return l[mini]
+    return lista[mini]
 
-def maximum():
+def maximum(lista):
     maxi = 0
-    l = []
-    for i in range(len(l)):
-        if l[i] > l[maxi]:
+    for i in range(len(lista)):
+        if lista[i] > lista[maxi]:
             maxi = i
-    return l[maxi]
+    return lista[maxi]
 
-def keresés():
-    x = 0
+def keresés(lista, elem):
     i = 0
-    l = []
-    while i < len(l) and not(l[i] == x):
+    while i < len(lista) and not(lista[i] == elem):
         i += 1
-    return i < len(l)
+    if i < len(lista):
+        return i
 
-def kiválogatás():
-    x, i = 0, 0
-    l, y = [], []
-    for i in range(len(l)):
-        if l[i] == x:
-            y.append(l[i])
+def kiválogatás(lista):
+    lista, y = [], []
+    for i in range(len(lista)):
+        if lista[i] >= x:
+            y.append(lista[i])
     return y
 
-def rendezés():
-    l = []
-    for i in range(len(l)):
-        for j in range(len(l)-1-i):
-            if l[j] > l[j+1]:
-                l[j], l[j+1] = l[j+1], l[j]
+def rendezés(lista):
+    for i in range(len(lista)):
+        for j in range(len(lista)-1-i):
+            if lista[j] > lista[j+1]:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
 
 def niceprint(lista):
     for i in range(len(lista)-1):
@@ -97,7 +90,7 @@ def niceprint(lista):
 def main():
     játék, nézők, hossz = [], [], []
     válassz(játék, nézők, hossz)
-    lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Keresés (5)", "Kiválogatás (6)", "Rendezés (7)"]
-    alkalmaz(lista)
+    lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Kiválogatás (5)", "Rendezés (6)"]
+    alkalmaz(lista, játék, nézők, hossz)
 
 main()
