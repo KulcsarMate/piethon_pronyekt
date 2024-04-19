@@ -1,0 +1,80 @@
+The Legend of Zelda: Breath of the Wild;637;4.3
+Super Mario Odyssey;289;5.1
+The Witcher 3: Wild Hunt;532;2.8
+Red Dead Redemption 2;421;3.6
+Minecraft;784;1.9
+Dark Souls III;177;6.0
+Persona 5;325;4.7
+Grand Theft Auto V;876;2.4
+Celeste;89;5.8
+Overwatch;465;2.2
+Final Fantasy XV;213;5.4
+Stardew Valley;672;3.3
+Rocket League;365;4.5
+Bloodborne;184;4.1
+Super Smash Bros. Ultimate;572;3.9
+Horizon Zero Dawn;748;2.6
+Fortnite;921;1.7
+Monster Hunter: World;416;4.9
+Resident Evil 2 (2019);237;5.6
+League of Legends;684;3.0
+Among Us;152;5.2
+Assassin's Creed Odyssey;327;4.4
+Dota 2;587;2.3
+Animal Crossing: New Horizons;849;1.8
+Destiny 2;298;4.0
+Fire Emblem: Three Houses;569;3.8
+Nier: Automata;415;4.6
+The Elder Scrolls V: Skyrim;736;2.9
+Genshin Impact;439;4.2
+Tetris 99;155;5.5
+Call of Duty: Warzone;802;2.1
+The Last of Us Part II;623;3.5
+Borderlands 3;356;4.8
+FIFA 21;664;3.7
+Splatoon 2;291;5.0
+Doom Eternal;498;3.2
+Halo: The Master Chief Collection;755;2.7
+Civilization VI;523;4.3
+Dead Cells;177;5.9
+Warframe;894;1.6
+Rainbow Six Siege;409;4.0
+Tony Hawk's Pro Skater 1 + 2;268;5.3
+Apex Legends;577;3.1
+Ghost of Tsushima;712;3.4
+Forza Horizon 4;633;4.7
+Minecraft Dungeons;181;5.7
+Watch Dogs: Legion;338;4.5
+Fall Guys: Ultimate Knockout;756;3.6
+Ori and the Will of the Wisps;249;5.1
+Control;673;3.3
+War Thunder;498;4.2
+Resident Evil 3 (2020);284;5.4
+Star Wars Jedi: Fallen Order;536;3.9
+Phasmophobia;159;5.6
+Hades;342;4.4
+Tom Clancy's The Division 2;621;3.8
+Persona 4 Golden;189;5.2
+Sea of Thieves;496;4.1
+Cuphead;266;5.8
+Final Fantasy VII Remake;518;3.5
+Slay the Spire;637;4.0
+Rust;879;2.5
+Baldur's Gate III;427;4.9
+Phantasy Star Online 2;157;5.0
+Resident Evil Village;722;3.2
+Outriders;385;4.6
+Ori and the Blind Forest;274;5.3
+Grounded;177;5.5
+Death Stranding;498;3.7
+Warhammer: Vermintide 2;351;4.3
+Little Nightmares II;639;4.8
+It Takes Two;279;5.7
+New World;198;4.2
+Valheim;833;2.3
+Guilty Gear Strive;543;3.9
+Loop Hero;262;5.2
+Resident Evil 7: Biohazard;317;4.5
+Disco Elysium;438;4.1
+Satisfactory;499;3.8
+Hitman 3;776;2.8

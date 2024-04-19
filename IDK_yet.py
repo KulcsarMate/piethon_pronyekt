@@ -18,7 +18,7 @@ def alkalmaz(lista, játék, nézők, hossz):
     while good != True:
         niceprint(lista)
         szám = int(input("Add meg a kívánt információ számát: "))-1
-        if szám < 0 or szám > 5:
+        if szám < 0 or szám > 6:
             print("Adjon meg egy jelenlévő elemet! \n")
         else:
             good = True
@@ -46,6 +46,12 @@ def alkalmaz(lista, játék, nézők, hossz):
             file.write(f"{játék[i]};{nézők[i]}; {hossz[i]} \n")
         print("Fájl létrejött 'Rendezett.txt' néven.")
         file.close()
+    elif szám == 6:
+        niceprint(játék)
+        kivant_elem = input("Adja meg az elemt, amely streamjéről többet szeretne megtudni: ").title()
+        index = keresés(játék, kivant_elem)
+        print(f"A keresett stream összes adata: \nStreamelt játék: {játék[index]}\nStream hossza: {hossz[index]}\nNézők száma: {nézők[index]}")
+
         
 
 def megszámolás(lista, limit):
@@ -105,7 +111,7 @@ def niceprint(lista):
 def main():
     játék, nézők, hossz = [], [], []
     válassz(játék, nézők, hossz)
-    lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Kiválogatás (5)", "Rendezés (6)"]
+    lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Kiválogatás (5)", "Rendezés (6)", "Keresés (7)"]
     alkalmaz(lista, játék, nézők, hossz)
 
 main()
