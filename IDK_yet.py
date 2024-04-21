@@ -2,7 +2,7 @@ from os import truncate
 from random import randint
 
 def valassz(jatek, nezok, hossz):
-    ez = input("Add meg a megnyitni kívánt fájl nevét: ")
+    ez = input("Add meg a megnyitni kívánt fájl nevét (be1 / be2): ")
     print()
     file = open(f"{ez}.txt", "r", encoding="utf-8")
     line = file.readline().strip()
