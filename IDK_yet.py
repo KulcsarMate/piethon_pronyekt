@@ -38,7 +38,9 @@ def alkalmaz(lista, jatek, nezok, hossz):
     elif szam == 3:
         print(f"A legnagyobb nézőszám {maximum(nezok)} volt")
     elif szam == 4:
-        kivalogatas(lista)
+        print(f"Streamelt játékok, amelyet 100-nál kevesebben néztek:")
+        act = kivalogatas(jatek, nezok)
+        niceprint(act)
     elif szam == 5:
         rendezes(hossz, nezok, jatek)
         file = open("Rendezett.txt", "a", encoding="utf-8")
@@ -90,12 +92,12 @@ def kereses(lista, elem):
     if i < len(lista):
         return i
 
-def kivalogatas(lista):
-    lista, y = [], []
-    for i in range(len(lista)):
-        if lista[i] >= x:
-            y.append(lista[i])
-    return y
+def kivalogatas(lista1, lista2):
+    eredmeny = []
+    for i in range(len(lista1)):
+        if lista2[i] < 100:
+            eredmeny.append(lista1[i])
+    return eredmeny
 
 def rendezes(lista, masik, jatek):
     for i in range(len(lista)):
