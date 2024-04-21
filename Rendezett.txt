@@ -1,3 +1,8 @@
+New World;198; 0.2 
+Tony Hawk's Pro Skater 1 + 2;268; 0.3 
+Super Mario Odyssey;289; 0.7 
+Guilty Gear Strive;543; 0.9 
+Sea of Thieves;496; 1.1 
 Warframe;894; 1.6 
 Fortnite;921; 1.7 
 Animal Crossing: New Horizons;849; 1.8 
@@ -31,16 +36,13 @@ Tom Clancy's The Division 2;621; 3.8
 Satisfactory;499; 3.8 
 Super Smash Bros. Ultimate;572; 3.9 
 Star Wars Jedi: Fallen Order;536; 3.9 
-Guilty Gear Strive;543; 3.9 
 Destiny 2;298; 4.0 
 Rainbow Six Siege;409; 4.0 
 Slay the Spire;637; 4.0 
 Bloodborne;184; 4.1 
-Sea of Thieves;496; 4.1 
 Disco Elysium;438; 4.1 
 Genshin Impact;439; 4.2 
 War Thunder;498; 4.2 
-New World;198; 4.2 
 The Legend of Zelda: Breath of the Wild;637; 4.3 
 Civilization VI;523; 4.3 
 Warhammer: Vermintide 2;351; 4.3 
@@ -59,12 +61,10 @@ Monster Hunter: World;416; 4.9
 Baldur's Gate III;427; 4.9 
 Splatoon 2;291; 5.0 
 Phantasy Star Online 2;157; 5.0 
-Super Mario Odyssey;289; 5.1 
 Ori and the Will of the Wisps;249; 5.1 
 Among Us;152; 5.2 
 Persona 4 Golden;189; 5.2 
 Loop Hero;262; 5.2 
-Tony Hawk's Pro Skater 1 + 2;268; 5.3 
 Ori and the Blind Forest;274; 5.3 
 Final Fantasy XV;213; 5.4 
 Resident Evil 3 (2020);284; 5.4 

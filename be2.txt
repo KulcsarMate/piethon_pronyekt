@@ -1,5 +1,5 @@
 The Legend of Zelda: Breath of the Wild;637;4.3
-Super Mario Odyssey;289;5.1
+Super Mario Odyssey;289;0.7
 The Witcher 3: Wild Hunt;532;2.8
 Red Dead Redemption 2;421;3.6
 Minecraft;784;1.9
@@ -39,7 +39,7 @@ Civilization VI;523;4.3
 Dead Cells;177;5.9
 Warframe;894;1.6
 Rainbow Six Siege;409;4.0
-Tony Hawk's Pro Skater 1 + 2;268;5.3
+Tony Hawk's Pro Skater 1 + 2;268;0.3
 Apex Legends;577;3.1
 Ghost of Tsushima;712;3.4
 Forza Horizon 4;633;4.7
@@ -55,7 +55,7 @@ Phasmophobia;159;5.6
 Hades;342;4.4
 Tom Clancy's The Division 2;621;3.8
 Persona 4 Golden;189;5.2
-Sea of Thieves;496;4.1
+Sea of Thieves;496;1.1
 Cuphead;266;5.8
 Final Fantasy VII Remake;518;3.5
 Slay the Spire;637;4.0
@@ -70,9 +70,9 @@ Death Stranding;498;3.7
 Warhammer: Vermintide 2;351;4.3
 Little Nightmares II;639;4.8
 It Takes Two;279;5.7
-New World;198;4.2
+New World;198;0.2
 Valheim;833;2.3
-Guilty Gear Strive;543;3.9
+Guilty Gear Strive;543;0.9
 Loop Hero;262;5.2
 Resident Evil 7: Biohazard;317;4.5
 Disco Elysium;438;4.1

@@ -3,6 +3,7 @@ from random import randint
 
 def válassz(játék, nézők, hossz):
     ez = input("Add meg a megnyitni kívánt fájl nevét: ")
+    print()
     file = open(f"{ez}.txt", "r", encoding="utf-8")
     line = file.readline().strip()
     while line != "":
@@ -17,16 +18,17 @@ def alkalmaz(lista, játék, nézők, hossz):
     good = False
     while good != True:
         niceprint(lista)
-        szám = int(input("Add meg a kívánt információ számát: "))-1
+        szám = int(input("Add meg az ismerni kívánt információ számát: "))-1
         if szám < 0 or szám > 6:
-            print("Adjon meg egy jelenlévő elemet! \n")
+            print("\nAdjon meg egy jelenlévő elemet! \n")
         else:
             good = True
+    print()
     if szám == 0:
         ora = input("Adja meg ismerni kívánt maximum hosszt (ne írjon semmit, ha az alapértelmezett 1 órát szeretné használni): ")
         if ora == "":
             ora = 1
-        print(f"A stream {megszámolás(hossz, float(ora))}-szer crashelt {ora} óra elélrése előtt.")
+        print(f"\nA stream {megszámolás(hossz, float(ora))}-szer crashelt {ora} óra elélrése előtt.")
     elif szám == 1:
         print(f"Streamelt órák száma: {összegzés(hossz)}")
     elif szám == 2:
@@ -50,7 +52,7 @@ def alkalmaz(lista, játék, nézők, hossz):
         niceprint(játék)
         kivant_elem = input("Adja meg az elemt, amely streamjéről többet szeretne megtudni: ").title()
         index = keresés(játék, kivant_elem)
-        print(f"A keresett stream összes adata: \nStreamelt játék: {játék[index]}\nStream hossza: {hossz[index]}\nNézők száma: {nézők[index]}")
+        print(f"\nA keresett stream összes adata: \nStreamelt játék: {játék[index]}\nStream hossza: {hossz[index]}\nNézők száma: {nézők[index]}")
 
         
 
@@ -83,7 +85,7 @@ def maximum(lista):
 
 def keresés(lista, elem):
     i = 0
-    while i < len(lista) and not(lista[i] == elem):
+    while i < len(lista) and not(lista[i].title() == elem):
         i += 1
     if i < len(lista):
         return i
@@ -106,7 +108,7 @@ def rendezés(lista, masik, jatek):
 def niceprint(lista):
     for i in range(len(lista)-1):
         print(lista[i], end="; ")
-    print(lista[len(lista)-1])
+    print(lista[len(lista)-1], "\n")
 
 def main():
     játék, nézők, hossz = [], [], []
