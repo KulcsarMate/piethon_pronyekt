@@ -1,80 +1,21 @@
-New World;198; 0.2 
-Tony Hawk's Pro Skater 1 + 2;268; 0.3 
-Super Mario Odyssey;289; 0.7 
-Guilty Gear Strive;543; 0.9 
-Sea of Thieves;496; 1.1 
-Warframe;894; 1.6 
-Fortnite;921; 1.7 
-Animal Crossing: New Horizons;849; 1.8 
-Minecraft;784; 1.9 
-Call of Duty: Warzone;802; 2.1 
-Overwatch;465; 2.2 
-Dota 2;587; 2.3 
-Valheim;833; 2.3 
-Grand Theft Auto V;876; 2.4 
-Rust;879; 2.5 
-Horizon Zero Dawn;748; 2.6 
-Halo: The Master Chief Collection;755; 2.7 
-The Witcher 3: Wild Hunt;532; 2.8 
-Hitman 3;776; 2.8 
-The Elder Scrolls V: Skyrim;736; 2.9 
-League of Legends;684; 3.0 
-Apex Legends;577; 3.1 
-Doom Eternal;498; 3.2 
-Resident Evil Village;722; 3.2 
-Stardew Valley;672; 3.3 
-Control;673; 3.3 
-Ghost of Tsushima;712; 3.4 
-The Last of Us Part II;623; 3.5 
-Final Fantasy VII Remake;518; 3.5 
-Red Dead Redemption 2;421; 3.6 
-Fall Guys: Ultimate Knockout;756; 3.6 
-FIFA 21;664; 3.7 
-Death Stranding;498; 3.7 
-Fire Emblem: Three Houses;569; 3.8 
-Tom Clancy's The Division 2;621; 3.8 
-Satisfactory;499; 3.8 
-Super Smash Bros. Ultimate;572; 3.9 
-Star Wars Jedi: Fallen Order;536; 3.9 
-Destiny 2;298; 4.0 
-Rainbow Six Siege;409; 4.0 
-Slay the Spire;637; 4.0 
-Bloodborne;184; 4.1 
-Disco Elysium;438; 4.1 
-Genshin Impact;439; 4.2 
-War Thunder;498; 4.2 
-The Legend of Zelda: Breath of the Wild;637; 4.3 
-Civilization VI;523; 4.3 
-Warhammer: Vermintide 2;351; 4.3 
-Assassin's Creed Odyssey;327; 4.4 
-Hades;342; 4.4 
-Rocket League;365; 4.5 
-Watch Dogs: Legion;338; 4.5 
-Resident Evil 7: Biohazard;317; 4.5 
-Nier: Automata;415; 4.6 
-Outriders;385; 4.6 
-Persona 5;325; 4.7 
-Forza Horizon 4;633; 4.7 
-Borderlands 3;356; 4.8 
-Little Nightmares II;639; 4.8 
-Monster Hunter: World;416; 4.9 
-Baldur's Gate III;427; 4.9 
-Splatoon 2;291; 5.0 
-Phantasy Star Online 2;157; 5.0 
-Ori and the Will of the Wisps;249; 5.1 
-Among Us;152; 5.2 
-Persona 4 Golden;189; 5.2 
-Loop Hero;262; 5.2 
-Ori and the Blind Forest;274; 5.3 
-Final Fantasy XV;213; 5.4 
-Resident Evil 3 (2020);284; 5.4 
-Tetris 99;155; 5.5 
-Grounded;177; 5.5 
-Resident Evil 2 (2019);237; 5.6 
-Phasmophobia;159; 5.6 
-Minecraft Dungeons;181; 5.7 
-It Takes Two;279; 5.7 
-Celeste;89; 5.8 
-Cuphead;266; 5.8 
-Dead Cells;177; 5.9 
-Dark Souls III;177; 6.0 
+The Rats;47; 0.2 
+7 Days to Die;97; 0.4 
+Cry of Fear;102; 0.5 
+Immortality;72; 0.8 
+Manhunt;76; 0.8 
+Lethal Company;285; 1.2 
+Granny;406; 1.2 
+Outlast;457; 1.4 
+Frankenstein;120; 1.6 
+Elden Ring;175; 1.6 
+Amanda the Adventurer;201; 1.7 
+Devil May Cry;302; 1.9 
+The Last of Us;138; 2.0 
+Ultimate Custom Night;508; 2.5 
+Bendy and the Ink Machine;186; 2.6 
+Friday the 13th;246; 2.9 
+Resident Evil;234; 3.2 
+Doki Doki Literature Club!;724; 3.7 
+Omori;423; 4.7 
+Doom;823; 5.0 
+Five Nights at Freddy's;893; 5.6 

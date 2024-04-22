@@ -14,16 +14,24 @@ def valassz(jatek, nezok, hossz):
         line = file.readline().strip()
     file.close()
 
-def alkalmaz(lista, jatek, nezok, hossz):
+def bekerd(lista):
     good = False
     while good != True:
         niceprint(lista)
-        szam = int(input("Add meg az ismerni kívánt információ számát: "))-1
+        szam = input("Add meg az ismerni kívánt információ számát (ha nem akar választani, írja 'random'): ")
+        if szam == "random":
+            szam = randint(0, 6)
+        else:
+            szam = int(szam)-1
         if szam < 0 or szam > 6:
             print("\nAdjon meg egy jelenlévő elemet! \n")
         else:
             good = True
     print()
+    return szam
+
+def alkalmaz(lista, jatek, nezok, hossz):
+    szam = bekerd(lista)
     if szam == 0:
         ora = input("Adja meg ismerni kívánt maximum hosszt (ne írjon semmit, ha az alapértelmezett 1 órát szeretné használni): ")
         if ora == "":
@@ -33,13 +41,15 @@ def alkalmaz(lista, jatek, nezok, hossz):
         print(f"Streamelt órák száma: {osszegzes(hossz)}")
     elif szam == 2:
         act = minimum(hossz)
-        index = kereses(hossz, act)
-        print(f"A leghamarabb crashelő stream hossza: {act}, játéka: {jatek[index]}, nézőszáma: {nezok[index]}")
+        print(f"A leghamarabb crashelő stream {act} óráig tartott.")
     elif szam == 3:
         print(f"A legnagyobb nézőszám {maximum(nezok)} volt")
     elif szam == 4:
-        print(f"Streamelt játékok, amelyet 100-nál kevesebben néztek:")
-        act = kivalogatas(jatek, nezok)
+        num = input("Milyen számnál kevesebb nézővel rendelkező steam-et keres (ne írjon semmit, ha az alapértelmezett 100-at használná): ")
+        if num == "":
+            num = 100
+        print(f"\nStreamelt játékok, {num} amelyet-nál kevesebben néztek:")
+        act = kivalogatas(jatek, nezok, int(num))
         niceprint(act)
     elif szam == 5:
         rendezes(hossz, nezok, jatek)
@@ -54,6 +64,10 @@ def alkalmaz(lista, jatek, nezok, hossz):
         niceprint(jatek)
         kivant_elem = input("Adja meg az elemt, amely streamjéről többet szeretne megtudni: ").title()
         index = kereses(jatek, kivant_elem)
+        while index == None:
+            print("\nA megadott elem helytelen.")
+            kivant_elem = input("Adja meg az elemt, amely streamjéről többet szeretne megtudni: ").title()
+            index = kereses(jatek, kivant_elem)
         print(f"\nA keresett stream összes adata: \nStreamelt játék: {jatek[index]}\nStream hossza: {hossz[index]}\nNézők száma: {nezok[index]}")
 
         
@@ -92,10 +106,10 @@ def kereses(lista, elem):
     if i < len(lista):
         return i
 
-def kivalogatas(lista1, lista2):
+def kivalogatas(lista1, lista2, kuszob):
     eredmeny = []
     for i in range(len(lista1)):
-        if lista2[i] < 100:
+        if lista2[i] < kuszob:
             eredmeny.append(lista1[i])
     return eredmeny
 
@@ -113,6 +127,7 @@ def niceprint(lista):
     print(lista[len(lista)-1], "\n")
 
 def main():
+    
     jatek, nezok, hossz = [], [], []
     valassz(jatek, nezok, hossz)
     lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Kiválogatás (5)", "Rendezés (6)", "Keresés (7)"]
