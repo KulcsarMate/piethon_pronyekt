@@ -1,6 +1,30 @@
 from os import truncate
 from random import randint
 
+def kerdes():
+    choice = input("Mit szeretne tenni?\nAdatot rögzíteni? Ha igen, akkor írja 'adat'\nStatisztikát látni? Ha igen, akkor írja 'statisztika'\n")
+    if choice == "adat":
+        rogzit()
+    if choice == "statisztika":
+        return True
+    next = input("Akar statisztikát látni?(i/n)")
+    if next == "i":
+        return True
+
+def rogzit():
+    ez = input("Adja meg a fájlt, amelybe rögzíteni szeretne: ")
+    file = open(f"{ez}.txt", "a", encoding="utf-8")
+    print("Minta:\nLethal Company;285;1.2\nFormátum:\nstr;int;float")
+    line = input("Adja meg a rögzíteni kívánt adatot a minta szerint: ")
+    file.write(f"{line}")
+    next = input("\nAkar-e többet írni?(i/n) ")
+    while next != "n":
+        print("Minta:\nLethal Company;285;1.2\nFormátum:\nstr;int;float")
+        line = input("Adja meg a rögzíteni kívánt adatot a minta szerint: ")
+        file.write(f"{line}\n")
+        next = input("Akar-e többet írni?(i/n) ")
+    file.close()
+
 def valassz(jatek, nezok, hossz):
     ez = input("Add meg a megnyitni kívánt fájl nevét (be1 / be2): ")
     print()
@@ -122,12 +146,13 @@ def rendezes(lista, masik, jatek):
                 masik[j], masik[j+1] = masik[j+1], masik[j]
 
 def niceprint(lista):
-    for i in range(len(lista)-1):
-        print(lista[i], end="; ")
-    print(lista[len(lista)-1], "\n")
+    for i in range(len(lista)):
+        print(lista[i], end="\n")
 
 def main():
-    
+    quest = kerdes()
+    if quest == None:
+        quit()
     jatek, nezok, hossz = [], [], []
     valassz(jatek, nezok, hossz)
     lista = ["Megszámolás (1)", "Összegzés (2)", "Minimum (3)", "Maximum (4)", "Kiválogatás (5)", "Rendezés (6)", "Keresés (7)"]
